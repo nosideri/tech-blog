@@ -8,24 +8,29 @@ body, html {
   margin: 0;
   font-family: sans-serif;
   color: #333;
+  background-color: #dbebd3;
 }
 
 a {
   text-decoration: none;
-  color: #225ca3;
   font-weight: bold;
   transition: color .1s;
+  color: #dbebd3;
+}
+
+.dash {
+  margin-left: 16px;
 }
 
 a:hover {
-  color: #3486eb;
+  color: #584948;
 }
 
 button {
-  background-color: #225ca3;
+  background-color: #2a1b1a;
   border: 0;
   padding: 1%;
-  color: white;
+  color: #dbebd3;
   font-weight: bold;
   transition: background-color .1s;
   cursor: pointer;
@@ -33,7 +38,7 @@ button {
 }
 
 button:hover {
-  background-color: #3486eb;
+  background-color: #584948;
 }
 
 .post-list {
@@ -68,22 +73,38 @@ form label {
 .wrapper {
   width: 100%;
   min-height: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
+  max-width: 100%;
+  margin: auto;
   display: flex;
   flex-direction: column;
+  justify-content: space-evenly;
 }
 
 header {
-  border-bottom: 1px solid #ccc;
+  background-color: #2a1b1a;
+  color: #dbebd3;
   display: flex;
+  height: 200px;
   justify-content: space-between;
   align-items: center;
-  padding: 0 1%;
+  padding: 0 4%;
+}
+
+.options {
+  color: #dbebd3;
 }
 
 header h1 {
-  font-size: 1em;
+  font-size: 3em;
+  color: #2a1b1a;
+  background-color: #dbebd3;
+  box-shadow: 5px 10px #a7a7a7;
+  border-radius: 10px;
+}
+
+.head-title {
+  padding: 20px 40px;
+  color: #2a1b1a;
 }
 
 main {
@@ -97,7 +118,6 @@ main {
   padding: 0;
   cursor: pointer;
   text-decoration: none;
-  color: #225ca3;
   font-size: 100%;
   font-weight: bold;
   transition: color .1s;
@@ -120,12 +140,17 @@ main {
 .post {
   margin-bottom: 2%;
   line-height: 150%;
+  border: 5px solid #2a1b1a;
 }
 
 .post .title span {
   font-style: italic;
   font-size: 90%;
   color: #7d7d7d;
+}
+
+.title {
+  background-color: #2a1b1a;
 }
 
 .edit-link {
